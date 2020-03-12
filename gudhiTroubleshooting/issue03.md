@@ -1,4 +1,4 @@
-a> Did you stop after `cmake`? That's just the configuration step (like qmake), then you actually need to **build**, see the installation instructions.
+> Did you stop after `cmake`? That's just the configuration step (like qmake), then you actually need to **build**, see the installation instructions.
 
 ## Installing Gudhi
 
