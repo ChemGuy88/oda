@@ -2,18 +2,26 @@
 
 ## Installing Gudhi
 
-@mglisse, I ran `make` and `sudo make install` after `cmake`, as I was [suggested to](#https://github.com/GUDHI/gudhi-devel/issues/241#issuecomment-596572300). I apologize for not attaching the output of that command. The output for both should be attached now [here](#https://github.com/ChemGuy88/oda/blob/master/gudhiTroubleshooting/makeOutput.txt) and [here](#https://github.com/ChemGuy88/oda/blob/master/gudhiTroubleshooting/makeInstallOutput.txt).
-
-I run:
+@mglisse, when I run
 
 ```
-cd ~/Library/Python/3.7/lib/python/site-packages/gudhi/build
+cd ~/gudhi/
+mkdir build
+cd build/
 cmake -DPython_ADDITIONAL_VERSIONS=3 -DCMAKE_BUILD_TYPE=Release -DQGLVIEWER_INCLUDE_DIR=/usr/local/lib/QGLViewer.framework/Headers -DWITH_GUDHI_EXAMPLE=ON ..
 make
 ```
 
-`make` returns some output with 4 warnings and 1 error ([output file](#))
+<!-- I get some output with 4 warnings and 1 error. The output is in [this file](#https://github.com/ChemGuy88/oda/blob/master/gudhiTroubleshooting/Output_Gudhi_Make.txt). -->
 
 ## Installing Gudhi Python Package
 
-@VincentRouvreau.
+@VincentRouvreau
+
+### Compiling
+
+asdf
+
+### Via Miniconda
+
+I have installed Gudhi via Conda, and I see the python package installed at /usr/local/Caskroom/miniconda/base/pkgs/gudhi-3.1.1-py37he63e17b_1, but in IPython3 when I type "gu", it won't autocomplete to "gudhi". Compare to when I type "nu", it will autocomplete to numpy.

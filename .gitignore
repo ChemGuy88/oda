@@ -1,8 +1,8 @@
-*
+#*
 !.gitignore
 !issue*.md
-!gudhiTroubleshooting/*
 !Output_Gudhi_Make.txt
 !Output_Gudhi_cmakeTrace.txt
 !Output_QGLViewer_Make.txt
 !Output_QGLVIewer_MakeInstall.txt
+!gudhiTroubleshooting/*
