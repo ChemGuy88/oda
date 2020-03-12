@@ -12,7 +12,8 @@ cmake -DPython_ADDITIONAL_VERSIONS=3 -DCMAKE_BUILD_TYPE=Release -DQGLVIEWER_INCL
 make
 ```
 
-<!-- I get some output with 4 warnings and 1 error. The output is in [this file](#https://github.com/ChemGuy88/oda/blob/master/gudhiTroubleshooting/Output_Gudhi_Make.txt). -->
+[Output for `cmake`](#https://github.com/ChemGuy88/oda/blob/master/gudhiTroubleshooting/Output_Gudhi_cmake.txt)
+[Output for `make`](#https://github.com/ChemGuy88/oda/blob/master/gudhiTroubleshooting/Output_Gudhi_make.txt)
 
 ## Installing Gudhi Python Package
 
