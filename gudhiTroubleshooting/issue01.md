@@ -1,4 +1,4 @@
-Thanks to both @mglisse and @VincentRouvreau for their replies. First comes my response to [mglisee](#CMake), and then a response to [VincentRouvreau](#FixingHomebrewlinks).
+aThanks to both @mglisse and @VincentRouvreau for their replies. First comes my response to [mglisee](#CMake), and then a response to [VincentRouvreau](#FixingHomebrewlinks).
 
 ## <a name="CMake"></a> CMake
 

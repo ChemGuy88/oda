@@ -1,4 +1,4 @@
-Thanks again @VincentRouvreau for helping me out with this issue.
+aThanks again @VincentRouvreau for helping me out with this issue.
 
 ## Installing QGLviewer
 
