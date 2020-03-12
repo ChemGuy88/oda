@@ -287,10 +287,11 @@ find /usr/local/Cellar -name "libQt5*"
 ```bash
 cd /Users/herman/Library/Python/3.7/lib/python/site-packages/gudhi
 cmake --trace -DPython_ADDITIONAL_VERSIONS=3 ..
-# See attached file for output (2.4 MB with over 15,000 lines and 3207 mentions of "Qt5")
 ```
 
-## <a name="Fixing Homebrew links"></a> Fixing Homebrew links
+Returns [this output](#https://raw.githubusercontent.com/ChemGuy88/oda/master/cmakeTrace.txt) with over 15,000 lines and 3207 mentions of "Qt5" (2.4 MB text file).
+
+## <a name="FixingHomebrewlinks"></a> Fixing Homebrew links
 
 - [x] Fix link
 
