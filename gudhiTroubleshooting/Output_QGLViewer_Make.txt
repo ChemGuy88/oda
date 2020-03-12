@@ -1,0 +1,713 @@
+/usr/local/Cellar/qt/5.14.1/bin/uic ImageInterface.ui -o ui_ImageInterface.h
+/usr/local/Cellar/qt/5.14.1/bin/uic VRenderInterface.ui -o ui_VRenderInterface.h
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/qglviewer.o qglviewer.cpp
+In file included from qglviewer.cpp:23:
+./qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from qglviewer.cpp:23:
+./qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+qglviewer.cpp:97:12: warning: 'start' is deprecated: Use QElapsedTimer instead [-Wdeprecated-declarations]
+  fpsTime_.start();
+           ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qdatetime.h:228:5: note: 'start' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("Use QElapsedTimer instead") void start();
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+qglviewer.cpp:417:45: warning: 'restart' is deprecated: Use QElapsedTimer instead [-Wdeprecated-declarations]
+    f_p_s_ = 1000.0 * maxCounter / fpsTime_.restart();
+                                            ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qdatetime.h:229:5: note: 'restart' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("Use QElapsedTimer instead") int restart();
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+qglviewer.cpp:727:32: warning: 'gluNewQuadric' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define
+      GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  static GLUquadric *quadric = gluNewQuadric();
+                               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:267:20: note:
+      'gluNewQuadric' has been explicitly marked deprecated here
+extern GLUquadric* gluNewQuadric (void) OPENGL_DEPRECATED(10.0, 10.9);
+                   ^
+qglviewer.cpp:756:9: warning: 'gluCylinder' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION
+      to silence these warnings) [-Wdeprecated-declarations]
+        gluCylinder(quadric, 0.0, 0.7 * length * sin(static_cast<double>(cutOff) * M_PI / 180.0),
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:251:13: note:
+      'gluCylinder' has been explicitly marked deprecated here
+extern void gluCylinder (GLUquadric* quad, GLdouble base, GLdouble top, GLdouble height, GLint slices, GLint stacks) OPENGL_DEPRECATED(10...
+            ^
+qglviewer.cpp:759:9: warning: 'gluSphere' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION
+      to silence these warnings) [-Wdeprecated-declarations]
+        gluSphere(quadric, 0.2 * length, 10, 10);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:288:13: note:
+      'gluSphere' has been explicitly marked deprecated here
+extern void gluSphere (GLUquadric* quad, GLdouble radius, GLint slices, GLint stacks) OPENGL_DEPRECATED(10.0, 10.9);
+            ^
+qglviewer.cpp:1133:3: warning: 'gluPickMatrix' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define
+      GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  gluPickMatrix(point.x(), point.y(), selectRegionWidth(), selectRegionHeight(),
+  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:279:13: note:
+      'gluPickMatrix' has been explicitly marked deprecated here
+extern void gluPickMatrix (GLdouble x, GLdouble y, GLdouble delX, GLdouble delY, GLint *viewport) OPENGL_DEPRECATED(10.0, 10.9);
+            ^
+qglviewer.cpp:2001:3: warning: 'qSort<QVector<Qt::Key> >' is deprecated: Use std::sort [-Wdeprecated-declarations]
+  qSort(keys);
+  ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qalgorithms.h:188:1: note: 'qSort<QVector<Qt::Key> >' has been explicitly marked
+      deprecated here
+QT_DEPRECATED_X("Use std::sort") inline void qSort(Container &c)
+^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+qglviewer.cpp:2285:33: warning: 'restart' is deprecated: Use QElapsedTimer instead [-Wdeprecated-declarations]
+      int elapsed = doublePress.restart();
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qdatetime.h:229:5: note: 'restart' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("Use QElapsedTimer instead") int restart();
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+qglviewer.cpp:2300:33: warning: 'restart' is deprecated: Use QElapsedTimer instead [-Wdeprecated-declarations]
+      int elapsed = doublePress.restart();
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qdatetime.h:229:5: note: 'restart' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("Use QElapsedTimer instead") int restart();
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+qglviewer.cpp:3532:32: warning: 'gluNewQuadric' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define
+      GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  static GLUquadric *quadric = gluNewQuadric();
+                               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:267:20: note:
+      'gluNewQuadric' has been explicitly marked deprecated here
+extern GLUquadric* gluNewQuadric (void) OPENGL_DEPRECATED(10.0, 10.9);
+                   ^
+qglviewer.cpp:3540:3: warning: 'gluCylinder' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define
+      GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  gluCylinder(quadric, radius, radius, length * (1.0 - head / coneRadiusCoef),
+  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:251:13: note:
+      'gluCylinder' has been explicitly marked deprecated here
+extern void gluCylinder (GLUquadric* quad, GLdouble base, GLdouble top, GLdouble height, GLint slices, GLint stacks) OPENGL_DEPRECATED(10...
+            ^
+qglviewer.cpp:3543:3: warning: 'gluCylinder' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define
+      GL_SILENCE_DEPRECATION to silence these warnings) [-Wdeprecated-declarations]
+  gluCylinder(quadric, coneRadiusCoef * radius, 0.0, head * length,
+  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:251:13: note:
+      'gluCylinder' has been explicitly marked deprecated here
+extern void gluCylinder (GLUquadric* quad, GLdouble base, GLdouble top, GLdouble height, GLint slices, GLint stacks) OPENGL_DEPRECATED(10...
+            ^
+14 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/camera.o camera.cpp
+In file included from camera.cpp:25:
+In file included from ./manipulatedCameraFrame.h:26:
+In file included from ./manipulatedFrame.h:28:
+./qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from camera.cpp:25:
+In file included from ./manipulatedCameraFrame.h:26:
+In file included from ./manipulatedFrame.h:28:
+./qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+camera.cpp:1619:5: warning: 'gluProject' is deprecated: first deprecated in macOS 10.9 - "Use GLKMathProject" [-Wdeprecated-declarations]
+    gluProject(tmp.x, tmp.y, tmp.z, modelViewMatrix_, projectionMatrix_,
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:280:14: note:
+      'gluProject' has been explicitly marked deprecated here
+extern GLint gluProject (GLdouble objX, GLdouble objY, GLdouble objZ, const GLdouble *model, const GLdouble *proj, const GLint *view, GLd...
+             ^
+camera.cpp:1622:5: warning: 'gluProject' is deprecated: first deprecated in macOS 10.9 - "Use GLKMathProject" [-Wdeprecated-declarations]
+    gluProject(src.x, src.y, src.z, modelViewMatrix_, projectionMatrix_,
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:280:14: note:
+      'gluProject' has been explicitly marked deprecated here
+extern GLint gluProject (GLdouble objX, GLdouble objY, GLdouble objZ, const GLdouble *model, const GLdouble *proj, const GLint *view, GLd...
+             ^
+camera.cpp:1664:3: warning: 'gluUnProject' is deprecated: first deprecated in macOS 10.9 - "Use GLKMathUnproject" [-Wdeprecated-declarations]
+  gluUnProject(src.x, src.y, src.z, modelViewMatrix_, projectionMatrix_,
+  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h:297:14: note:
+      'gluUnProject' has been explicitly marked deprecated here
+extern GLint gluUnProject (GLdouble winX, GLdouble winY, GLdouble winZ, const GLdouble *model, const GLdouble *proj, const GLint *view, G...
+             ^
+5 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/manipulatedFrame.o manipulatedFrame.cpp
+In file included from manipulatedFrame.cpp:23:
+In file included from ./manipulatedFrame.h:28:
+./qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from manipulatedFrame.cpp:23:
+In file included from ./manipulatedFrame.h:28:
+./qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+manipulatedFrame.cpp:242:27: warning: 'restart' is deprecated: Use QElapsedTimer instead [-Wdeprecated-declarations]
+  delay_ = last_move_time.restart();
+                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qdatetime.h:229:5: note: 'restart' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("Use QElapsedTimer instead") int restart();
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+3 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/manipulatedCameraFrame.o manipulatedCameraFrame.cpp
+In file included from manipulatedCameraFrame.cpp:23:
+In file included from ./manipulatedCameraFrame.h:26:
+In file included from ./manipulatedFrame.h:28:
+./qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from manipulatedCameraFrame.cpp:23:
+In file included from ./manipulatedCameraFrame.h:26:
+In file included from ./manipulatedFrame.h:28:
+./qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/frame.o frame.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/saveSnapshot.o saveSnapshot.cpp
+In file included from saveSnapshot.cpp:23:
+./qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from saveSnapshot.cpp:23:
+./qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+saveSnapshot.cpp:573:11: warning: 'sprintf' is deprecated: Use asprintf(), arg() or QTextStream instead [-Wdeprecated-declarations]
+    count.sprintf("%.04d", snapshotCounter_++);
+          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:381:5: note: 'sprintf' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("Use asprintf(), arg() or QTextStream instead")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+saveSnapshot.cpp:583:15: warning: 'sprintf' is deprecated: Use asprintf(), arg() or QTextStream instead [-Wdeprecated-declarations]
+        count.sprintf("%.04d", snapshotCounter_++);
+              ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:381:5: note: 'sprintf' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("Use asprintf(), arg() or QTextStream instead")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+4 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/constraint.o constraint.cpp
+In file included from constraint.cpp:26:
+In file included from ./manipulatedCameraFrame.h:26:
+In file included from ./manipulatedFrame.h:28:
+./qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from constraint.cpp:26:
+In file included from ./manipulatedCameraFrame.h:26:
+In file included from ./manipulatedFrame.h:28:
+./qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/keyFrameInterpolator.o keyFrameInterpolator.cpp
+In file included from keyFrameInterpolator.cpp:24:
+./qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from keyFrameInterpolator.cpp:24:
+./qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/mouseGrabber.o mouseGrabber.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/quaternion.o quaternion.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/vec.o vec.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/BackFaceCullingOptimizer.o VRender/BackFaceCullingOptimizer.cpp
+In file included from VRender/BackFaceCullingOptimizer.cpp:46:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from VRender/BackFaceCullingOptimizer.cpp:46:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/BSPSortMethod.o VRender/BSPSortMethod.cpp
+In file included from VRender/BSPSortMethod.cpp:45:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from VRender/BSPSortMethod.cpp:45:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/EPSExporter.o VRender/EPSExporter.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/Exporter.o VRender/Exporter.cpp
+In file included from VRender/Exporter.cpp:45:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from VRender/Exporter.cpp:45:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/FIGExporter.o VRender/FIGExporter.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/gpc.o VRender/gpc.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/ParserGL.o VRender/ParserGL.cpp
+In file included from VRender/ParserGL.cpp:49:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from VRender/ParserGL.cpp:49:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/Primitive.o VRender/Primitive.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/PrimitivePositioning.o VRender/PrimitivePositioning.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/TopologicalSortMethod.o VRender/TopologicalSortMethod.cpp
+In file included from VRender/TopologicalSortMethod.cpp:48:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from VRender/TopologicalSortMethod.cpp:48:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/VisibilityOptimizer.o VRender/VisibilityOptimizer.cpp
+In file included from VRender/VisibilityOptimizer.cpp:46:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from VRender/VisibilityOptimizer.cpp:46:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/Vector2.o VRender/Vector2.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/Vector3.o VRender/Vector3.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/NVector3.o VRender/NVector3.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/VRender.o VRender/VRender.cpp
+In file included from VRender/VRender.cpp:60:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from VRender/VRender.cpp:60:
+In file included from VRender/VRender.h:52:
+VRender/../qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -dM -E -o .moc/moc_predefs.h /usr/local/Cellar/qt/5.14.1/mkspecs/features/data/dummy.cpp
+/usr/local/Cellar/qt/5.14.1/bin/moc -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --include /Users/herman/install/libQGLViewer-2.7.2/QGLViewer/.moc/moc_predefs.h -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -I/Users/herman/install/libQGLViewer-2.7.2/QGLViewer -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/usr/local/Cellar/qt/5.14.1/lib qglviewer.h -o .moc/moc_qglviewer.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/moc_qglviewer.o .moc/moc_qglviewer.cpp
+In file included from .moc/moc_qglviewer.cpp:10:
+.moc/../qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from .moc/moc_qglviewer.cpp:10:
+.moc/../qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/usr/local/Cellar/qt/5.14.1/bin/moc -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --include /Users/herman/install/libQGLViewer-2.7.2/QGLViewer/.moc/moc_predefs.h -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -I/Users/herman/install/libQGLViewer-2.7.2/QGLViewer -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/usr/local/Cellar/qt/5.14.1/lib camera.h -o .moc/moc_camera.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/moc_camera.o .moc/moc_camera.cpp
+/usr/local/Cellar/qt/5.14.1/bin/moc -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --include /Users/herman/install/libQGLViewer-2.7.2/QGLViewer/.moc/moc_predefs.h -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -I/Users/herman/install/libQGLViewer-2.7.2/QGLViewer -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/usr/local/Cellar/qt/5.14.1/lib manipulatedFrame.h -o .moc/moc_manipulatedFrame.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/moc_manipulatedFrame.o .moc/moc_manipulatedFrame.cpp
+In file included from .moc/moc_manipulatedFrame.cpp:10:
+In file included from .moc/../manipulatedFrame.h:28:
+./qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from .moc/moc_manipulatedFrame.cpp:10:
+In file included from .moc/../manipulatedFrame.h:28:
+./qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/usr/local/Cellar/qt/5.14.1/bin/moc -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --include /Users/herman/install/libQGLViewer-2.7.2/QGLViewer/.moc/moc_predefs.h -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -I/Users/herman/install/libQGLViewer-2.7.2/QGLViewer -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/usr/local/Cellar/qt/5.14.1/lib manipulatedCameraFrame.h -o .moc/moc_manipulatedCameraFrame.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/moc_manipulatedCameraFrame.o .moc/moc_manipulatedCameraFrame.cpp
+In file included from .moc/moc_manipulatedCameraFrame.cpp:10:
+In file included from .moc/../manipulatedCameraFrame.h:26:
+In file included from ./manipulatedFrame.h:28:
+./qglviewer.h:1223:54: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  void saveToFile(const QString &fileName = QString::null);
+                                                     ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+In file included from .moc/moc_manipulatedCameraFrame.cpp:10:
+In file included from .moc/../manipulatedCameraFrame.h:26:
+In file included from ./manipulatedFrame.h:28:
+./qglviewer.h:1224:59: warning: 'null' is deprecated: use QString() [-Wdeprecated-declarations]
+  bool restoreFromFile(const QString &fileName = QString::null);
+                                                          ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qstring.h:912:5: note: 'null' has been explicitly marked deprecated here
+    QT_DEPRECATED_X("use QString()")
+    ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qglobal.h:294:33: note: expanded from macro 'QT_DEPRECATED_X'
+#  define QT_DEPRECATED_X(text) Q_DECL_DEPRECATED_X(text)
+                                ^
+/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers/qcompilerdetection.h:676:55: note: expanded from macro 'Q_DECL_DEPRECATED_X'
+#    define Q_DECL_DEPRECATED_X(text) __attribute__ ((__deprecated__(text)))
+                                                      ^
+2 warnings generated.
+/usr/local/Cellar/qt/5.14.1/bin/moc -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --include /Users/herman/install/libQGLViewer-2.7.2/QGLViewer/.moc/moc_predefs.h -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -I/Users/herman/install/libQGLViewer-2.7.2/QGLViewer -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/usr/local/Cellar/qt/5.14.1/lib frame.h -o .moc/moc_frame.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/moc_frame.o .moc/moc_frame.cpp
+/usr/local/Cellar/qt/5.14.1/bin/moc -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB --include /Users/herman/install/libQGLViewer-2.7.2/QGLViewer/.moc/moc_predefs.h -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -I/Users/herman/install/libQGLViewer-2.7.2/QGLViewer -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include -F/usr/local/Cellar/qt/5.14.1/lib keyFrameInterpolator.h -o .moc/moc_keyFrameInterpolator.cpp
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -c -pipe -stdlib=libc++ -O2 -std=gnu++11  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -frtti -Wall -Wextra -fPIC -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtOpenGL.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtWidgets.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtGui.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtXml.framework/Headers -I/usr/local/Cellar/qt/5.14.1/lib/QtCore.framework/Headers -I.moc -I. -I/usr/local/Cellar/qt/5.14.1/mkspecs/macx-clang -F/usr/local/Cellar/qt/5.14.1/lib -o .obj/moc_keyFrameInterpolator.o .moc/moc_keyFrameInterpolator.cpp
+rm -f QGLViewer QGLViewer.framework/QGLViewer QGLViewer.framework/QGLViewer
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -stdlib=libc++ -headerpad_max_install_names  -arch x86_64 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.13 -Wl,-rpath,@executable_path/../Frameworks -Wl,-rpath,@loader_path/Frameworks -single_module -dynamiclib -compatibility_version	2.7 -current_version	2.7.2 -install_name	QGLViewer.framework/Versions/2/QGLViewer -o QGLViewer .obj/qglviewer.o .obj/camera.o .obj/manipulatedFrame.o .obj/manipulatedCameraFrame.o .obj/frame.o .obj/saveSnapshot.o .obj/constraint.o .obj/keyFrameInterpolator.o .obj/mouseGrabber.o .obj/quaternion.o .obj/vec.o .obj/BackFaceCullingOptimizer.o .obj/BSPSortMethod.o .obj/EPSExporter.o .obj/Exporter.o .obj/FIGExporter.o .obj/gpc.o .obj/ParserGL.o .obj/Primitive.o .obj/PrimitivePositioning.o .obj/TopologicalSortMethod.o .obj/VisibilityOptimizer.o .obj/Vector2.o .obj/Vector3.o .obj/NVector3.o .obj/VRender.o .obj/moc_qglviewer.o .obj/moc_camera.o .obj/moc_manipulatedFrame.o .obj/moc_manipulatedCameraFrame.o .obj/moc_frame.o .obj/moc_keyFrameInterpolator.o  -F/usr/local/Cellar/qt/5.14.1/lib -framework OpenGL -framework AGL -framework QtOpenGL -framework QtWidgets -framework QtGui -framework AppKit -framework Metal -framework QtXml -framework QtCore -framework DiskArbitration -framework IOKit
+mv -f QGLViewer QGLViewer.framework/Versions/2/QGLViewer
+ln -s Versions/Current/QGLViewer QGLViewer.framework/QGLViewer
+cd /Users/herman/install/libQGLViewer-2.7.2/QGLViewer/QGLViewer.framework/Headers && (test -L QGLViewer || ln -s . QGLViewer)
